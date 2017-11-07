@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Mustang Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Mustang Travels by Steve DiStefano. A look a my front end design skills through adventure travel across the country. The site combines my love of design with my love and travel and adventure. The site incorporates numerous API's to showcase the use of public data to enhnace a site as well as images with modern CSS transitions. Enjoy!" />
+    <meta name="keywords" content="Mustang Travels by Steve DiStefano" />
+    <meta name="author" content="Steve DiStefano" />
+    <link rel="shortcut icon" href="images/mustang-logo.png"> 
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mustangStyle2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+     <!-- QTipped2 -->
+    <link href="css/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+     <!-- animate-css -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
+    <!-- animated-css -->
+      <!-- start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </script>
+
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+</head>
+<body>    
+<div class="container-fluid">
+<div class="row">
+    <div id="mustangTravelHeader">
+        <div id="welcome">
+            <h4>Hop in ...</h4>
+            <h5>and follow the travels</h5>
+        </div>
+        <div >
+            <a href="mustangIndex.html" id="goBack">Home</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="services" class="services">
+        <div class="container">
+            <div class="service-head text-center">
+                <h2>About This Site</h2>
+                <span> </span>
+            </div>
+            <!-- services-grids -->
+            <div class="services-grids text-center">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+                        <img class="img-responsive logo" src="images/mustang-logo.png" width="60">
+                        <h3>Cars and Travel</h3>
+                        <p>I worked for Lawrence Livermore Labs where I designed and developed many sites. Unfortunately, all of my work is behind a firewall so no one can see what I have done. That does not make for a very interesting portfolio page. So to showcase my abilities I created mockups of work I did so during interviews there is a visual representation of my work. But I also want to showcase my design abilities.</p>
+                        <p>That is where this site comes into play. When thinking about building a site to demonstrate my abilities, I needed inspiration. So I looked at what I enjoy. That's traveling (adventure really) and cars, preferably fast cars.</p>
+                        <p>So the theme of this site is my beloved and departed 2008 Mustang and some road trips we shared together.</p>
+                        <p>But because I also need to showcase my skills, this site incorporates use of Photoshop to enhance my photos, and Javascript to make it all just a bit more interesting. I hope you enjoy.</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="row">
+        <!---start-places-->
+    <div class="places">
+        <div class="wrap"> 
+            <div class="places-head text-center">
+                <h1>Time Line</h1>
+            </div>
+            <div class="places-time-line">
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->  
+                <div class="timelineTravel pullRight">
+                    <div class="timeLineLabel wow fadeInLeft" data-wow-delay="0.4s">
+                        <h2>Arches National Park
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Arches National Park&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>“Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do.” <strong>- Mark Twain</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="38.7261205,-109.7315928">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel">
+
+                    <figure class="imageViewer">
+                        <img src="images/Arches1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Utah" data-pic1="ut-arches" data-pic2="ut-bryce" data-pic3="ut-zion"
+                            data-place="arch,brca,zion">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->
+                <div class="timelineTravel showSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Arizona
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Arizona&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>What most people don't understand is that UFOs are on a cosmic tourist route. That's why they're always seen in Arizona, Scotland, and New Mexico. Another thing to consider is that all three of those destinations are good places to play golf. So there's possibly some connection between aliens and golf. <strong> - Alice Cooper</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="34.966564, -109.736874">Map</a>
+                    </div>
+                </div>  
+                <div class="timelineTravel pullRight">
+                    <figure class="imageViewer">
+                        <img src="images/Arizona1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Arizona" data-pic1="az-gc" data-pic2="az2" 
+                            data-pic3="az1"
+                            data-place="grca,pefo,nava">
+                        </a>
+                    </figure>
+                </div>
+                <div class="timelineTravel hideSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Arizona
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Arizona&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>What most people don't understand is that UFOs are on a cosmic tourist route. That's why they're always seen in Arizona, Scotland, and New Mexico. Another thing to consider is that all three of those destinations are good places to play golf. So there's possibly some connection between aliens and golf. <strong> - Alice Cooper</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="34.966564, -109.736874">Map</a>
+                    </div>
+                </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->  
+                <div class="timelineTravel pullRight">
+                    <div class="timeLineLabel wow fadeInLeft" data-wow-delay="0.4s">
+                        <h2>Pacific Coast Highway
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=California State Route 1&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>Drive it like you stole it!</p>
+                        <p>Don’t be afraid to follow your dreams, because that’s your path!</p>
+                        <p><strong> - Source Unknown</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="36.289405,-121.852896">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel">
+                    <figure class="imageViewer">
+                        <img src="images/Coast1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Highway 1 - the PCH" data-pic1="pch1" 
+                            data-pic2="pch2" data-pic3="pch3"
+                            data-place="pore,chis,fopo">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->                   
+                <div class="timelineTravel showSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Big Sky Country
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Montana&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>In the 1880s, a weedy Easterner named Owen Wister had something like a nervous breakdown. Wyoming, with its wide-open spaces and healthy pursuits, was prescribed as a cure. Wister was immediately smitten by the taciturn cowboys and the rules imposed upon them by the cattle barons. <strong>  -Clive Sinclair</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="45.2510253,-112.9610076">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel pullRight">
+                    <figure class="imageViewer">
+                        <img src="images/Wyoming1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Wyoming and Montana" data-pic1="mt-bica" 
+                            data-pic2="mt-glac" data-pic3="mt-yellowstone"
+                            data-place="glac,yell,bica">
+                        </a>
+                    </figure>
+                </div>                   
+                <div class="timelineTravel hideSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Big Sky Country
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Montana&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>In the 1880s, a weedy Easterner named Owen Wister had something like a nervous breakdown. Wyoming, with its wide-open spaces and healthy pursuits, was prescribed as a cure. Wister was immediately smitten by the taciturn cowboys and the rules imposed upon them by the cattle barons. <strong>  -Clive Sinclair</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="45.2510253,-112.9610076">Map</a>
+                    </div>
+                </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->  
+                <div class="timelineTravel pullRight">
+                    <div class="timeLineLabel wow fadeInLeft" data-wow-delay="0.4s">
+                        <h2>Crazy Horse Monument
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Crazy Horse Memorial&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>Back in 1948, a monomaniac called Korczak resolved to impose Crazy Horse's likeness upon a mountain. It took 50 years to complete the head, which measures 90ft from crown to chin. By comparison, the four presidents at Mt Rushmore seem modest. <strong> - Clive Sinclair</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="43.8365676,-103.6256049">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel">
+                    <figure class="imageViewer">
+                        <img src="images/CrazyHorse1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="South Dakota" data-pic1="sd-badlands" 
+                            data-pic2="sd-rushmore" data-pic3="sd-wind"
+                            data-place="badl,moru,wica">
+                        </a>
+                    </figure>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->                   
+                <div class="timelineTravel showSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Northern California
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=California&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>Of all the mountain ranges I have climbed, I like the Sierra Nevada the best. <strong> John Muir</strong></p>
+                        <p><strong> Ralph Waldo Emerson’s quote, </strong>“life is a journey, not a destination.”</p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="39.450993, -120.016139">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel pullRight">
+                    <figure class="imageViewer">
+                        <img src="images/ca1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Eastern California" data-pic1="ncal-tahoe" 
+                            data-pic2="ncal-death" data-pic3="ncal-yosemite"
+                            data-place="cali,yose,deva">
+                        </a>
+                    </figure>
+                </div>                   
+                <div class="timelineTravel hideSmall">
+                    <div class="timeLineLabel timeLineLabel1 wow fadeInRight" data-wow-delay="0.4s">
+                        <h2>Northern California
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-wikki='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=California&rvprop=content&exchars=1000&callback=?'></span> 
+                        </h2>
+                        <p>Of all the mountain ranges I have climbed, I like the Sierra Nevada the best. <strong> John Muir</strong></p>
+                        <p><strong> Ralph Waldo Emerson’s quote, </strong>“life is a journey, not a destination.”</p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="39.450993, -120.016139">Map</a>
+                    </div>
+                </div>
+            </div>
+            </div><!-- close container-->
+            <div class="row">
+                <div class="col-md-12 blueLine">
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+<!-- Time Marker -->  
+                <div class="timelineTravel pullRight">
+                    <div class="timeLineLabel wow fadeInLeft" data-wow-delay="0.4s">
+                        <h2>More to come... </h2>
+                        <p>Great memories happen when you don’t know where you’re going. <strong> - Source Unknown</strong></p>
+                        <p>Travel with Less Plans and More Freedom! <strong> - Source -Me</strong></p>
+                        <a class="btn btn-info btn-xs" type="button" data-coords="40.0942344,-75.4561152">Map</a>
+                    </div>
+                </div>
+                <div class="timelineTravel">
+                    <figure class="imageViewer">
+                        <img src="images/M1.png" alt="Steve Distefano Portfolio" />
+                        <figcaption>
+                            <h3>Read More</h3>
+                        </figcaption>
+                        <a class="mi" data-toggle="modal" data-target="#detailModal"
+                            onclick="showDetails(this, this, this, this, this)"
+                            data-title="Pennsylvania" data-pic1="pa-gettysburg" 
+                            data-pic2="pa-independence" data-pic3="pa-vf"
+                            data-place="gett,vafo,inde">
+                        </a>
+                    </figure>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            </div><!-- close container-->
+        </div>
+    </div> 
+</div>
+<div class="row">
+    <div class="footer text-center">
+        <p class="text-muted">&copy; 2017 by Steve DiStefano </p>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <!-- ******** First section ***********-->
+          <div class="row">
+            <h3  id="title"></h3>
+            <h4 id="parkDir"></h4>
+          </div>
+          <div class="row">
+            <div id="picture"></div>
+            <h5 id="parkDescr" style="margin-top: 0;"></h5>
+          </div>
+          <hr>
+          <div class="clearfix"> </div>
+
+          <!-- ******** Second section ***********-->
+          <div class="row">
+            <h3  id="title1" style="text-align: center;margin-top: 0;"></h3>
+            <h4 id="parkDir1" style="color: rgb(140, 2, 2);text-align: center;"></h4>
+          </div>
+          <div class="row">
+            <div id="picture1"></div>
+            <h5 id="parkDescr1" style=" margin-top: 0; "></h5>
+          </div>
+          <hr>
+          <div class="clearfix"> </div>
+
+          <!-- ******** Third section ***********-->
+          <div class="row">
+            <h3  id="title2" style="text-align: center;margin-top: 0;"></h3>
+            <h4 id="parkDir2"></h4>
+          </div>
+          <div class="row">
+            <div id="picture2"></div>
+            <!--<img class="img-responsive" style="float: left; max-width: 35%; margin:0 2em 2em;" src="assets/images/ncal-death.jpg" alt="">-->
+            <h5 id="parkDescr2" style="margin-top: 0;"></h5>
+          </div>
+          <div class="clearfix"> </div>
+        </div>  
+      </div> 
+
+      <div class="modal-footer">
+        <p class="text-muted pull-left"><i>Royalty Free photos courtesy Pixabay</i></p>
+        <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!-- End Modal-->
+
+
+
+  <!-- QTipped2 JS-->
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.map"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJiNwz4xAEC8JT3MSOHoulV6XOtAcWok&callback=initMap" async defer>
+</script>
+
+
+</div>
+</body>
+</html>
